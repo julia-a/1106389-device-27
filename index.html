@@ -1,12 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Интернет-магазин гаджетов «DEVICE»</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <!-- Header -->
+  <header class="header">
+    <nav class="main-navigation">
 
-  </body>
+      <!-- Logo -->
+      <a class="logo">
+        <img class="logo__img" src="img/svg/logo-device.svg" alt="Логотип интернет-магазина гаджетов «DEVICE»" width="163" height="35">
+      </a>
+
+      <!-- User menu -->
+      <ul class="user-menu">
+        <li class="user-menu__item">
+          <button class="button" type="button">Поиск по сайту</button>
+        </li>
+        <li class="user-menu__item">
+          <a href="#" class="button">Войти</a>
+        </li>
+        <li class="user-menu__item">
+          <a href="#" class="button">Сравнить</a>
+        </li>
+        <li class="user-menu__item">
+          <a href="#" class="button">Корзина</a>
+        </li>
+      </ul>
+
+      <!-- Main menu -->       
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a href="catalog.html" class="main-menu__link">Каталог товаров</a>
+
+          <!-- Catalog menu --> 
+          <ul class="catalog-menu">
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Виртуальная реальность</a>
+              <a href="#" class="catalog-menu__link">Моноподы для селфи</a>
+              <a href="#" class="catalog-menu__link">Экшн-камеры</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Фитнес-браслеты</a>
+              <a href="#" class="catalog-menu__link">Умные часы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Доставка</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Гарантия</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <h1 class="visually-hidden">Интернет-магазин гаджетов «DEVICE»</h1>
+
+    <!-- Main brands -->
+    <section class="main-brands">
+      <h2 class="visually-hidden">Популярные бренды</h2>
+      <ul class="main-brands__list">
+        <li class="main-brands__item">
+          <a class="main-brands__link" href="#" target="_blank">
+            <img class="main-brands__img" src="img" alt="Логотип DJI" width="260" height="100">
+          </a>
+        </li>
+        <li class="main-brands__item">
+          <a class="main-brands__link" href="#" target="_blank">
+            <img class="main-brands__img" src="img" alt="Логотип SP Gadgets" width="260" height="100">
+          </a>
+        </li>
+        <li class="main-brands__item">
+          <a class="main-brands__link" href="#" target="_blank">
+            <img class="main-brands__img" src="img" alt="Логотип GoPro" width="260" height="100">
+          </a>
+        </li>
+        <li class="main-brands__item">
+          <a class="main-brands__link" href="#" target="_blank">
+            <img class="main-brands__img" src="img" alt="Логотип Vive" width="260" height="100">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <h2 class="section-title">О нас</h2>
+      <p class="about__text">
+        Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+      </p>
+      <p class="about__text">
+        Мы можем доставить ваш товар в самые отдаленные точки России! 
+        DEVICE работает со многими транспортными компаниями:
+      </p>
+      <ul class="about__list">
+        <li class="about__item">
+          <a href="#" class="about__link">Деловые Линии</a>
+        </li>
+        <li class="about__item">
+          <a href="#" class="about__link">Автотрейдинг</a>
+        </li>
+        <li class="about__item">
+          <a href="#" class="about__link">ЖелДорЭкспедиция</a>
+        </li>
+      </ul>
+      <a href="#" class="button">Подробнее о нас</a>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts">
+      <h2 class="section-title">Контакты</h2>
+      <p class="contacts__text">
+        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. 
+        Всякое бывает.
+      </p>
+      <img class="contacts__map" src="img" alt="Интернет-магазин гаджетов «DEVICE» расположен по адресу г. Москва, ул. Строителей, д. 15 " width="560" height="222">
+      <a href="#" class="button">Напишите нам</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-navigation">
+      <a class="logo">
+        <img class="logo__img" src="img/" alt="Логотип интернет-магазина гаджетов «DEVICE»" width="163" height="35">
+      </a>
+      <ul class="user-menu">
+        <li class="user-menu__item">
+          <a href="#" class="button">Войти</a>
+        </li>
+        <li class="user-menu__item">
+          <a href="#" class="button">Сравнить</a>
+        </li>
+        <li class="user-menu__item">
+          <a href="#" class="button">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <address class="footer-info__address">г. Москва, ул. Строителей, 15</address>
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Доставка</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Гарантия</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="#" class="main-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <p class="footer-info__phone">Тел.:<a class="phone" href="tel:+74954959595">+7 (495) 495-95-95</a></p> 
+    </div>
+    <div class="footer-links">
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Facebook"></a> 
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Instagram"></a> 
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Twitter"></a> 
+        </li>
+      </ul>
+      <div class="footer-links__copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
+
