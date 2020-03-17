@@ -27,10 +27,8 @@
 
           <!-- Form search -->
           <form class="search" method="post" action="https://echo.htmlacademy.ru">
-            <label class="search__label">
-              <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">              
-            </label>
-            <button class="search-button" type="submit">Найти</button>
+            <input class="se\ arch__input" type="search" name="search" placeholder="Поиск по сайту">              
+            <button class="search__button" type="submit">Найти</button>
           </form>
         </li>
 
@@ -229,13 +227,13 @@
     <section class="services main__services">
       <h2 class="visually-hidden">Наши сервисы</h2>
       <ul class="services__list reset-list">
-        <li class="services__item services__item_delivery">
+        <li class="services__item">
           <div class="services__controls-wrap">
             <a class="button button_services button_services-current" href="#"><span>Доставка</span></a>
             <a class="button button_services" href="#"><span>Гарантия</span></a>
             <a class="button button_services" href="#"><span>Кредит</span></a>
           </div>
-          <div class="services__desc-wrap">
+          <div class="services__desc-wrap services__desc-wrap_delivery">
             <h3 class="section-title">Доставка</h3>
             <p class="services__text">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
@@ -243,13 +241,13 @@
             </p>
           </div>
         </li>
-        <li class="services__item services__item_warranty visually-hidden">
+        <li class="services__item visually-hidden">
           <div class="services__controls-wrap">
             <a class="button button_services" href="#"><span>Доставка</span></a>
             <a class="button button_services button_services-current" href="#"><span>Гарантия</span></a>
             <a class="button button_services" href="#"><span>Кредит</span></a>
           </div>
-          <div class="services__desc-wrap">
+          <div class="services__desc-wrap services__desc-wrap_warranty">
             <h3 class="section-title">Гарантия</h3>
             <p class="services__text">
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
@@ -257,13 +255,13 @@
             </p>
           </div>
         </li>
-        <li class="services__item services__item_credit visually-hidden">
+        <li class="services__item visually-hidden">
           <div class="services__controls-wrap">
             <a class="button button_services" href="#"><span>Доставка</span></a>
             <a class="button button_services" href="#"><span>Гарантия</span></a>
             <a class="button button_services button_services-current" href="#"><span>Кредит</span></a>
           </div>
-          <div class="services__desc-wrap">
+          <div class="services__desc-wrap services__desc-wrap_credit">
             <h3 class="section-title">Кредит</h3>
             <p class="services__text">
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
@@ -275,7 +273,7 @@
     </section>
 
     <!-- Main brands -->
-    <section class="main-brands container main__main-brands">
+    <section class="main-brands main__main-brands">
       <h2 class="visually-hidden">Популярные бренды</h2>
       <ul class="main-brands__list reset-list">
         <li class="main-brands__item">
@@ -302,10 +300,10 @@
     </section>
 
     <!-- Обёртка для колонок -->
-    <div class="index-columns container">
+    <div class="index-columns">
 
       <!-- About -->
-      <section class="about">
+      <section class="about main__about">
         <h2 class="section-title">О нас</h2>
         <p class="about__text">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -341,25 +339,25 @@
   <footer class="footer">
 
     <!-- Footer navigation -->
-    <div class="footer-navigation container">
+    <div class="footer-navigation">
       <a class="logo footer__logo">
         <img class="logo__img" src="img/svg/logo-device-yellow.svg" alt="Логотип интернет-магазина гаджетов «DEVICE»" width="163" height="35">
       </a>
-      <ul class="menu reset-list menu_user">
-        <li class="menu__item menu__item_login">
+      <ul class="menu reset-list menu_user menu_user-footer"> 
+        <li class="menu__item menu__item_login menu__item_login-footer">
           <a href="#" class="menu__link">Войти</a>
         </li>
-        <li class="menu__item menu__item_compare">
+        <li class="menu__item menu__item_compare menu__item_compare-footer">
           <a href="#" class="menu__link">Сравнить</a>
         </li>
-        <li class="menu__item menu__item_cart">
+        <li class="menu__item menu__item_cart menu__item_cart-footer">
           <a href="#" class="menu__link">Корзина</a>
         </li>
       </ul>
     </div>
     
     <!-- Footer info -->
-    <div class="footer-info container">
+    <div class="footer-info">
       <address class="footer-info__address">г. Москва, ул. Строителей, 15</address>
       <ul class="menu reset-list menu_main">
         <li class="menu__item">
@@ -376,7 +374,7 @@
     </div>
 
     <!-- Socials -->
-    <div class="socials container">
+    <div class="socials">
       <div class="socials__line"></div>
       <ul class="socials__list reset-list">
         <li class="socials__item">
