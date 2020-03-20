@@ -12,84 +12,100 @@
 
 <body>
   
-<!-- Header -->
-<header class="header container">
-  <nav class="main-navigation">
+  <!-- Header -->
+  <header class="header container catalog__header">
+    <nav class="navigation">
 
-    <!-- Logo -->
-    <a class="logo" href="index.html">
-      <img class="logo__img" src="img/svg/logo-device.svg" alt="Логотип интернет-магазина гаджетов «DEVICE»" width="163" height="35">
-    </a>
+      <!-- Logo -->
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/svg/logo-device.svg" alt="Логотип интернет-магазина гаджетов «DEVICE»" width="163" height="35">
+      </a>
 
-    <!-- User menu -->
-    <ul class="menu reset-list menu_user">
-      <li class="menu__item">
-        <form class="search" method="post" action="https://echo.htmlacademy.ru">
-          <label class="search__label">
-            <span class="visually-hidden">Поиск:</span>
-            <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">              
-          </label>
-          <button class="search-button" type="submit">Найти</button>
-        </form>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Войти</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Сравнить</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Корзина</a>
-      </li>
-    </ul>
+      <!-- User menu -->
+      <ul class="menu reset-list header__menu">
+        <li class="menu__item menu__item_search">
 
-    <!-- Main menu -->       
-    <ul class="menu reset-list menu_main">
-      <li class="menu__item">
-        <a href="catalog.html" class="menu__link">Каталог товаров</a>
+          <!-- Form search -->
+          <form class="search" method="post" action="https://echo.htmlacademy.ru">
+            <label class="search__label" for="search"><span class="visually-hidden">Поиск:</span></label>
+            <input class="search__input" id="search" type="search" name="search" placeholder="Поиск по сайту">                 
+            <button class="search__button" type="submit">Найти</button>
+          </form>
+        </li>
 
-        <!-- Catalog menu --> 
-        <ul class="menu reset-list menu_catalog">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Виртуальная реальность</a>
-            <a href="#" class="menu__link">Моноподы для селфи</a>
-            <a href="#" class="menu__link">Экшн-камеры</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Фитнес-браслеты</a>
-            <a href="#" class="menu__link">Умные часы</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Доставка</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Гарантия</a>
-      </li>
-      <li class="menu__item">
-        <a href="#" class="menu__link">Контакты</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+        <!-- Login -->
+        <li class="menu__item menu__item_login">
+          <a class="menu__link menu__link_login" href="#">Валентин Петухов</a></label>
+          <a class="menu__link menu__link_logout" href="#">Выйти</a></label>
+        </li>
+        <li class="menu__item menu__item_compare">
+          <a class="menu__link menu__link_compare" href="#">Сравнить</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link_cart" href="#">Корзина</a>
+        </li>
+      </ul>
 
+      <!-- Main menu -->       
+      <ul class="menu reset-list menu_main">
+        <li class="menu__item menu__item_catalog">
+          <a class="menu__link menu__link_catalog">Каталог товаров</a>
 
+          <!-- Catalog menu --> 
+          <div class="menu menu_catalog">
+            <div class="menu__column-wrap">
+              <ul class="menu__list reset-list menu__list_catalog"> 
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Виртуальная реальность</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Моноподы для селфи</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="menu__list reset-list menu__list_catalog"> 
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Фитнес-браслеты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="menu__list reset-list menu__list_catalog"> 
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="menu__item menu__item_delivery">
+          <a class="menu__link" href="#">Доставка</a>
+        </li>
+        <li class="menu__item menu__item_warranty">
+          <a class="menu__link" href="#">Гарантия</a>
+        </li>
+        <li class="menu__item menu__item_contacts">
+          <a class="menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
   <!-- Main -->
-  <main class="main container"> 
-    <h1 class="section-title">Моноподы для селфи</h1>
+  <main class="main"> 
 
     <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
+    <div class="breadcrumbs container main__breadcrumbs">
+      <h1 class="section-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs__list reset-list">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="catalog.html">Каталог товаров</a>
+          <a class="breadcrumbs__link" href="#">Каталог товаров</a>
         </li>
         <li class="breadcrumbs__item current">
           <a class="breadcrumbs__link">Моноподы для селфи</a>
@@ -102,12 +118,13 @@
 
       <!-- Filters -->
       <section class="filter main__filter">
-        <h2 class="block-title">Фильтр:</h2>
+        <h2 class="block-title filter__block-title">Фильтр:</h2>
+     
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 
           <!-- Расчет стоимости -->
-          <fieldset class="selection">
-            <legend class="selection__name">Стоимость:</legend>
+          <fieldset class="selection main__selection">
+            <legend class="selection__name">Стоимость</legend>
             <div class="range">       
               <div class="range__controls">
                 <div class="range__scale">
@@ -187,7 +204,7 @@
         </div>
 
         <!-- Catalog -->
-        <ul class="catalog__list reset-list">
+        <ul class="catalog__list reset-list main__catalog-list">
           <li class="catalog__item"> 
             <img class="catalog__img" src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <div class="catalog__info">
@@ -233,56 +250,63 @@
             </div>
           </li>
         </ul>
+   
         
         <!-- Pagination -->
         <ul class="pagination reset-list catalog__pagination">
-          <li class="pagination__item"><a href="#" class="pagination__link pagination__link_back">Назад</a></li>
-          <li class="pagination__item"><a class="pagination__link pagination__link_current">1</a></li>
-          <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-          <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-          <li class="pagination__item"><a href="#" class="pagination__link pagination__link_next">Вперед</a></li>
+          <li class="pagination__item-back"><a href="#" class="pagination__link pagination__link_back">Назад</a></li>
+          <li class="pagination__item-pages"><a class="pagination__link pagination__link_current">1</a></li>
+          <li class="pagination__item-pages"><a href="#" class="pagination__link">2</a></li>
+          <li class="pagination__item-pages"><a href="#" class="pagination__link">3</a></li>
+          <li class="pagination__item-next"><a href="#" class="pagination__link pagination__link_next">Вперед</a></li>
         </ul>
       </section>
     </div>
   </main>
 
+  
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-navigation container">
-      <a class="logo" href="index.html">
+
+    <!-- Footer navigation -->
+    <div class="footer-navigation">
+      <a class="logo footer__logo">
         <img class="logo__img" src="img/svg/logo-device-yellow.svg" alt="Логотип интернет-магазина гаджетов «DEVICE»" width="163" height="35">
       </a>
-      <ul class="menu reset-list menu_user">
-        <li class="menu__item">
-          <a href="#" class="menu__link">Войти</a>
+      <ul class="menu reset-list menu_user footer__menu_user"> 
+        <li class="menu__item menu__item-footer">
+          <a class="menu__link menu__link_login menu__link_login-footer" href="#">Войти</a>
         </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Сравнить</a>
+        <li class="menu__item menu__item-footer">
+          <a class="menu__link menu__link_compare menu__link_compare-footer" href="#">Сравнить</a>
         </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Корзина</a>
+        <li class="menu__item menu__item-footer">
+          <a class="menu__link menu__link_cart menu__link_cart-footer" href="#">Корзина</a>
         </li>
       </ul>
     </div>
-
-    <div class="footer-info container">
+    
+    <!-- Footer info -->
+    <div class="footer-info">
       <address class="footer-info__address">г. Москва, ул. Строителей, 15</address>
       <ul class="menu reset-list menu_main">
-        <li class="menu__item">
-          <a href="#" class="menu__link">Доставка</a>
+        <li class="menu__item footer__item-main-menu">
+          <a class="menu__link" href="#">Доставка</a>
         </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Гарантия</a>
+        <li class="menu__item footer__item-main-menu">
+          <a class="menu__link" href="#">Гарантия</a>
         </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Контакты</a>
+        <li class="menu__item footer__item-main-menu">
+          <a class="menu__link" href="#">Контакты</a>
         </li>
       </ul>
       <p class="footer-info__phone">Тел.: <a class="phone" href="tel:+74954959595">+7 (495) 495-95-95</a></p> 
     </div>
 
-    <div class="footer-socials container">
-      <ul class="socials reset-list">
+    <!-- Socials -->
+    <div class="socials">
+      <div class="socials__line"></div>
+      <ul class="socials__list reset-list">
         <li class="socials__item">
           <a class="socials__link socials__link_fb" href="#"><span class="visually-hidden">Facebook</span></a> 
         </li>

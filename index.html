@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Интернет-магазин гаджетов «DEVICE»</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic">
   <link rel="stylesheet" href="css/min.normalize.css">
   <link rel="stylesheet" href="css/style.css">  
 </head>
@@ -32,46 +32,62 @@
             <button class="search__button" type="submit">Найти</button>
           </form>
         </li>
+
+        <!-- Login -->
         <li class="menu__item menu__item_login">
-          <a href="#" class="menu__link menu__link_login">Войти</a>
+          <a class="menu__link menu__link_login" href="#">Войти</a></label>
         </li>
         <li class="menu__item menu__item_compare">
-          <a href="#" class="menu__link menu__link_compare">Сравнить</a>
+          <a class="menu__link menu__link_compare" href="#">Сравнить</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link menu__link_cart">Корзина</a>
+          <a class="menu__link menu__link_cart" href="#">Корзина</a>
         </li>
       </ul>
 
       <!-- Main menu -->       
       <ul class="menu reset-list menu_main">
         <li class="menu__item menu__item_catalog">
-          <a href="catalog.html" class="menu__link menu__link_catalog">Каталог товаров</a>
+          <a class="menu__link menu__link_catalog">Каталог товаров</a>
 
           <!-- Catalog menu --> 
-          <ul class="menu reset-list menu_catalog">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Виртуальная реальность</a>
-              <a href="#" class="menu__link">Моноподы для селфи</a>
-              <a href="#" class="menu__link">Экшн-камеры</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Фитнес-браслеты</a>
-              <a href="#" class="menu__link">Умные часы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <div class="menu menu_catalog">
+            <div class="menu__column-wrap">
+              <ul class="menu__list reset-list menu__list_catalog"> 
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Виртуальная реальность</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Моноподы для селфи</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="menu__list reset-list menu__list_catalog"> 
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Фитнес-браслеты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="menu__list reset-list menu__list_catalog"> 
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog-monopod-selfie.html">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="menu__item menu__item_delivery">
-          <a href="#" class="menu__link">Доставка</a>
+          <a class="menu__link" href="#">Доставка</a>
         </li>
         <li class="menu__item menu__item_warranty">
-          <a href="#" class="menu__link">Гарантия</a>
+          <a class="menu__link" href="#">Гарантия</a>
         </li>
         <li class="menu__item menu__item_contacts">
-          <a href="#" class="menu__link">Контакты</a>
+          <a class="menu__link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -85,10 +101,10 @@
     <section class="slider container main__slider">
       <h2 class="visually-hidden">Промо-слайдер</h2>
       <div class="slider__item">
-        <div class="slider__img-wrap">
+        <div class="slider__img-wrap"> 
           <img class="slider__img" src="img/longest-selfie-stick.png" alt="Самая длинная палка для селфи" width="384" height="486">
         </div>
-        <div class="slider__desc-wrap">
+        <div class="slider__desc-wrap slider__desc-wrap-01">
           <p class="section-title section-title_slider">
             Делай селфи, <br>
             как Бен Стиллер!</p>
@@ -97,7 +113,7 @@
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.            
           </p>
           <div class="slider__controls-wrap">
-            <a href="#" class="button button_slider">Подробнее</a>
+            <a class="button button_slider" href="#">Подробнее</a>
             <div class="slider__controls">
               <button type="button" class="slider__controls-control slider__controls-control_current"><span class="visually-hidden">Показать первый слайд</span></button>
               <button type="button" class="slider__controls-control"><span class="visually-hidden">Показать второй слайд</span></button>
@@ -124,7 +140,7 @@
         <div class="slider__img-wrap">
           <img class="slider__img" src="img/fitness-tracker.png" alt="Фитнес-браслет" width="345" height="485">
         </div>
-        <div class="slider__desc-wrap">
+        <div class="slider__desc-wrap slider__desc-wrap-02">
           <p class="section-title section-title_slider">
             Худеем <br>
             правильно!
@@ -134,7 +150,7 @@
             не пропускать занятия и соблюдать диету.            
           </p>
           <div class="slider__controls-wrap">
-            <a href="#" class="button button_slider">Подробнее</a>
+            <a class="button button_slider" href="#">Подробнее</a>
             <div class="slider__controls">
               <button type="button" class="slider__controls-control"><span class="visually-hidden">Показать первый слайд</span></button>
               <button type="button" class="slider__controls-control slider__controls-control_current"><span class="visually-hidden">Показать второй слайд</span></button>
@@ -153,14 +169,14 @@
         <div class="slider__img-wrap">
           <img class="slider__img" src="img/quadcopter.png" alt="Квадрокоптер" width="526" height="334">
         </div>
-        <div class="slider__desc-wrap">
+        <div class="slider__desc-wrap slider__desc-wrap-03">
           <p class="section-title section-title_slider">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider__text">
             Этот обычный, на первый взгляд, квадрокоптер оснащен 
             мощным лазером, замаскированным под стандартную камеру.                      
           </p>
           <div class="slider__controls-wrap">
-            <a href="#" class="button button_slider">Подробнее</a>
+            <a class="button button_slider" href="#">Подробнее</a>
             <div class="slider__controls">
               <button type="button" class="slider__controls-control"><span class="visually-hidden">Показать первый слайд</span></button>
               <button type="button" class="slider__controls-control"><span class="visually-hidden">Показать второй слайд</span></button>
@@ -193,7 +209,7 @@
         </li>
         <li class="main-goods__item">
           <a class="main-goods__link" href="#">
-            <div class="main-goods__img-wrap main-goods__img-wrap_selfie"></div>
+            <div class="main-goods__img-wrap main-goods__img-wrap_monopod"></div> 
             <p class="main-goods__title">
               Моноподы <br>
               для селфи</p>
@@ -320,7 +336,7 @@
           <li class="about__item">Автотрейдинг</li>
           <li class="about__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="button button_about">Подробнее о нас</a>
+        <a class="button button_about" href="#">Подробнее о нас</a>
       </section>
 
       <!-- Contacts -->
@@ -333,7 +349,7 @@
         <a class="contacts__map" href="#">
           <img src="img/main-map.jpg" alt="Интернет-магазин гаджетов «DEVICE» расположен по адресу г. Москва, ул. Строителей, д. 15 " width="560" height="222">
         </a>
-        <a href="#" class="button button_contacts">Напишите нам</a>
+        <a class="button button_contacts" href="#">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -348,13 +364,13 @@
       </a>
       <ul class="menu reset-list menu_user footer__menu_user"> 
         <li class="menu__item menu__item-footer">
-          <a href="#" class="menu__link menu__link_login menu__link_login-footer">Войти</a>
+          <a class="menu__link menu__link_login menu__link_login-footer" href="#">Войти</a>
         </li>
         <li class="menu__item menu__item-footer">
-          <a href="#" class="menu__link menu__link_compare menu__link_compare-footer">Сравнить</a>
+          <a class="menu__link menu__link_compare menu__link_compare-footer" href="#">Сравнить</a>
         </li>
         <li class="menu__item menu__item-footer">
-          <a href="#" class="menu__link menu__link_cart menu__link_cart-footer">Корзина</a>
+          <a class="menu__link menu__link_cart menu__link_cart-footer" href="#">Корзина</a>
         </li>
       </ul>
     </div>
@@ -364,13 +380,13 @@
       <address class="footer-info__address">г. Москва, ул. Строителей, 15</address>
       <ul class="menu reset-list menu_main">
         <li class="menu__item footer__item-main-menu">
-          <a href="#" class="menu__link">Доставка</a>
+          <a class="menu__link" href="#">Доставка</a>
         </li>
         <li class="menu__item footer__item-main-menu">
-          <a href="#" class="menu__link">Гарантия</a>
+          <a class="menu__link" href="#">Гарантия</a>
         </li>
         <li class="menu__item footer__item-main-menu">
-          <a href="#" class="menu__link">Контакты</a>
+          <a class="menu__link" href="#">Контакты</a>
         </li>
       </ul>
       <p class="footer-info__phone">Тел.: <a class="phone" href="tel:+74954959595">+7 (495) 495-95-95</a></p> 
@@ -434,4 +450,3 @@
   <script src=""></script>  
 </body>
 </html>
-
