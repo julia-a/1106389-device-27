@@ -141,7 +141,7 @@
           </fieldset>
 
           <!-- Подбор гаджетов по цвету -->
-          <fieldset class="selection">
+          <fieldset class="selection main__selection">
             <legend class="selection__name">Цвет</legend>
             <ul class="selection__list reset-list">
               <li class="selector">
@@ -157,18 +157,18 @@
                 <label class="selector__label selector__label_checkbox" for="blue">Синий</label>
               </li>
               <li class="selector">
-                <input class="selector__input visually-hidden" id="red" type="checkbox" name="color-4" value="red">
+                <input class="selector__input visually-hidden" id="red" type="checkbox" name="color-4" value="red" checked>
                 <label class="selector__label selector__label_checkbox" for="red">Красный</label>
               </li>
               <li class="selector">
-                <input class="selector__input visually-hidden" id="pink" type="checkbox" name="color-5" value="pink">
+                <input class="selector__input visually-hidden" id="pink" type="checkbox" name="color-5" value="pink" disabled>
                 <label class="selector__label selector__label_checkbox" for="pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
 
           <!-- Подбор гаджетов по наличию Bluetooth -->
-          <fieldset class="selection">
+          <fieldset class="selection main__selection">
             <legend class="selection__name">Bluetooth</legend>
             <ul class="selection__list reset-list">
               <li class="selector">
@@ -197,7 +197,7 @@
             <li class="sorting__item"><a href="#" class="sorting__link">По типу</a></li>
             <li class="sorting__item"><a href="#" class="sorting__link">По популярности</a></li>
           </ul>
-          <ul class="sorting__list reset-list">
+          <ul class="sorting__list reset-list sorting__list_direction">
             <li class="sorting__item"><a href="#" class="sorting__link link-direction link-direction_up"><span class="visually-hidden">По возрастанию</span></a></li> 
             <li class="sorting__item"><a class="sorting__link sorting__link_current link-direction link-direction_down"><span class="visually-hidden">По убыванию</span></a></li>
           </ul>
@@ -207,51 +207,54 @@
         <ul class="catalog__list reset-list main__catalog-list">
           <li class="catalog__item"> 
             <img class="catalog__img" src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <div class="catalog__new">NEW</div>
             <div class="catalog__info">
               <h3 class="catalog__title"><a class="catalog__link" href="#">Любительская селфи-палка</a></h3>
               <p class="catalog__price">500 руб.</p>
             </div>
             <div class="catalog__hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#" class="compare">Добавить к сравнению</a>
+              <a class="button catalog__button" href="#">В корзину</a>
+              <a class="catalog__add" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog__item"> 
             <img class="catalog__img" src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            <div class="catalog__new">NEW</div>
             <div class="catalog__info">
               <h3 class="catalog__title"><a class="catalog__link" href="#">Профессиональная селфи-палка</a></h3>
               <p class="catalog__price">1 500 руб.</p>
             </div>
             <div class="catalog__hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#" class="compare">Добавить к сравнению</a>
+              <a class="button catalog__button" href="#">В корзину</a>
+              <a class="catalog__add" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog__item"> 
             <img class="catalog__img" src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <div class="catalog__new">NEW</div>
             <div class="catalog__info">
               <h3 class="catalog__title"><a class="catalog__link" href="#">Непотопляемая селфи-палка</a></h3>
               <p class="catalog__price">2 500 руб.</p>
             </div>
             <div class="catalog__hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#" class="compare">Добавить к сравнению</a>
+              <a class="button catalog__button" href="#">В корзину</a>
+              <a class="catalog__add" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog__item"> 
             <img class="catalog__img" src="img/follow-me-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <div class="catalog__new catalog__new_active">NEW</div>
             <div class="catalog__info">
               <h3 class="catalog__title"><a class="catalog__link" href="#">Селфи-палка «Следуй за мной»</a></h3>
               <p class="catalog__price">4 900 руб.</p>
             </div>
             <div class="catalog__hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#" class="compare">Добавить к сравнению</a>
+              <a class="button catalog__button" href="#">В корзину</a>
+              <a class="catalog__add" href="#">Добавить к сравнению</a>
             </div>
           </li>
         </ul>
    
-        
         <!-- Pagination -->
         <ul class="pagination reset-list catalog__pagination">
           <li class="pagination__item-back"><a href="#" class="pagination__link pagination__link_back">Назад</a></li>
@@ -266,7 +269,7 @@
 
   
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer catalog__footer"> 
 
     <!-- Footer navigation -->
     <div class="footer-navigation">
