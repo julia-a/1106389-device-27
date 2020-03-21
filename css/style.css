@@ -400,6 +400,19 @@ a {
   position: relative;
 }
 
+.menu__link_catalog:hover,
+.menu__link_catalog:focus {
+  color: rgba(0, 0, 0, 0.6);
+
+  opacity: 1;
+}
+
+.menu__link_catalog:active {
+  color: rgba(0, 0, 0, 0.3);
+  
+  opacity: 1;
+}
+
 .menu__link_catalog::after {
   content: "";
   position: absolute;
