@@ -308,7 +308,7 @@ a {
 .menu__link {
   position: relative;
 
-  display: block;
+  display: inline-block;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -1067,6 +1067,10 @@ a {
 
 .menu__item-footer:last-child {
   margin-right: 0;
+}
+
+.menu__link_logout-footer {
+  margin-left: 12px;
 }
 
 .menu__link_login-footer:before {
